@@ -1,0 +1,408 @@
+/* core stles ***********************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* navbar section  *********************************************************/
+nav {
+  padding: 20px 120px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menus {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.menus div,
+i {
+  font-size: 24px;
+  color: rgba(176, 142, 173, 1);
+  font-weight: 400;
+}
+
+/* main section  *************************************************************/
+main {
+  background-image: url("./Images/fon.png");
+}
+
+main img {
+  position: relative;
+  top: 65px;
+  left: 240px;
+}
+
+.main-card {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 450px;
+  height: 400px;
+  background-color: #b08ead;
+  color: white;
+  position: relative;
+  top: -498px;
+  right: -967px;
+}
+
+.main-card h6 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-card h1 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.main-card button {
+  margin: 20px 0;
+  padding: 5px;
+  font-size: 14px;
+  font-family: roboto;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* about section  ******************************************************/
+.about {
+  padding: 30px 120px;
+  text-align: center;
+}
+
+.about-title {
+  margin: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: roboto;
+  color: rgba(185, 155, 182, 1);
+  text-transform: uppercase;
+}
+
+.about-subtitle {
+  margin: 20px auto;
+  font-size: 26px;
+  font-weight: 400;
+  color: rgba(95, 77, 93, 1);
+  width: 747px;
+}
+
+.about-button,
+.products-box__text button {
+  margin: 20px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-family: roboto;
+  color: rgba(185, 155, 182, 1);
+  border-radius: 25px;
+  border: 1px solid rgba(185, 155, 182, 1);
+  background: none;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-box__text {
+  margin-top: -5px;
+  padding: 0 30px;
+  height: 110px;
+  background-color: rgba(206, 179, 203, 1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-box__text h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.about-box__text h4 {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.about-me,
+.products-container {
+  margin-top: 50px;
+  padding: 70px;
+  background-color: rgba(206, 179, 203, 1);
+  display: flex;
+}
+
+.about-me img,
+.products-container img {
+  position: relative;
+  left: 110px;
+}
+
+.about-me__card,
+.products-container__card {
+  padding: 50px;
+  width: 420px;
+  height: 420px;
+  background-color: #b08ead;
+  position: relative;
+  top: 131px;
+  left: 120px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-me__card h5,
+.products-container h5 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: roboto;
+}
+
+.about-me__card h2,
+.products-container h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.about-me__card button,
+.products-container button {
+  margin-top: 25px;
+  padding: 5px;
+  background: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: roboto;
+  border-bottom: 1px solid white;
+}
+
+/* product section  ************************************************************/
+.products {
+  padding: 30px 120px;
+}
+
+.products-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products-box__text {
+  width: 50%;
+}
+
+.products-box__text h5 {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: roboto;
+  text-transform: uppercase;
+  color: rgba(185, 155, 182, 1);
+}
+
+.products-box__text p {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(95, 77, 93, 1);
+}
+
+/* products shop section  ***************************************************/
+.products-shop {
+  padding: 30px 120px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prduct {
+  text-align: center;
+}
+
+.product-name {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(95, 77, 93, 1);
+}
+
+.product-price {
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-size: 400;
+  color: rgba(176, 176, 176, 1);
+  font-family: roboto;
+}
+
+/* contanct section  *****************************************************/
+.contact {
+  padding: 30px 120px;
+  background-color: rgba(206, 179, 203, 1);
+}
+
+.send-message {
+  justify-content: space-evenly;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.address {
+  font-size: 22px;
+  font-weight: 400;
+  color: white;
+  line-height: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.form-adress {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: roboto;
+  text-transform: uppercase;
+}
+
+.form-text {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.form form input,
+button,
+.form-textarea {
+  margin: 10px 10px 10px 0;
+  padding: 10px;
+  width: 250px;
+  background: none;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.form form input::placeholder {
+  font-style: italic;
+  color: white;
+}
+
+.form-textarea {
+  width: 515px;
+}
+
+.form-button {
+  width: 150px;
+  font-size: 18px;
+  color: white;
+}
+
+.subscription {
+  padding: 50px;
+  text-align: center;
+}
+
+.sbs-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(185, 155, 182, 1);
+}
+
+.sbs-subtitle {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(95, 77, 93, 1);
+}
+
+.subscription form input,
+button {
+  margin: 0;
+  padding: 15px 10px;
+  width: 200px;
+  outline: none;
+  border: 1px solid rgba(206, 179, 203, 1);
+}
+
+.subscription form button {
+  color: whi;
+  background-color: rgba(206, 179, 203, 1);
+}
+
+/* footer section  ***********************************/
+.footer-up {
+  padding: 30px 130px;
+  background-color: rgba(214, 187, 211, 1);
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 22px;
+  text-align: center;
+}
+
+.fa-shop,
+.fa-truck,
+.fa-thumbs-up {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(186, 159, 183, 1);
+  text-align: center;
+  line-height: 100px;
+  font-size: 36px;
+}
+
+.footer-down {
+  padding: 50px 130px 5px 130px;
+  background-color: rgba(201, 173, 198, 1);
+  color: white;
+}
+
+.footer-menus {
+  padding: 30px 0;
+  display: flex;
+  align-self: center;
+}
+
+.footer-menus img {
+  margin-right: 35px;
+}
+
+.footer-menus div {
+  margin: 0 20px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.site-info {
+  font-family: roboto;
+  font-size: 11px;
+}
